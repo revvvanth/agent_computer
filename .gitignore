@@ -1,0 +1,15 @@
+.venv/
+vendor/
+.gitnexus/
+.cache/
+__pycache__/
+.pytest_cache/
+.env
+reports/
+workspaces/
+*.pyc
+# Locally populated with supplied credentials.
+/.env.example
+/.kareos-parent-guard.json
+/.baseline-*.txt
+/standalone-export.json
