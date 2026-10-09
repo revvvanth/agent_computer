@@ -1,0 +1,17 @@
+{
+  "version": "required-route-v2.1",
+  "retrieval_mode": "required",
+  "arms": ["A", "B", "C"],
+  "seed": 20261009,
+  "repeats": 2,
+  "specialty": "differential_diagnosis",
+  "limits": {
+    "max_depth": 0, "max_children": 0, "max_sessions": 1,
+    "max_turns": 16, "max_calls": 16, "max_tools": 14,
+    "max_parallel": 1, "max_invalid": 2,
+    "max_context_chars": 48000, "max_output_tokens": 4096,
+    "max_token_units": 240000, "deadline_seconds": 300,
+    "call_timeout_seconds": 90
+  },
+  "interpretation": "All arms must read the same two documents before finalizing. A uses baseline retrieval; B uses structured tools; C uses its browser. This tests required retrieval workflows rather than voluntary adoption. Prompts differ only in tool interface instructions and schemas. Keyword coverage is not clinical accuracy."
+}

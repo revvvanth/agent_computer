@@ -1,0 +1,16 @@
+{
+  "version": "pilot-v1",
+  "arms": ["A", "B", "C"],
+  "seed": 20261009,
+  "repeats": 3,
+  "specialty": "differential_diagnosis",
+  "limits": {
+    "max_depth": 0, "max_children": 0, "max_sessions": 1,
+    "max_turns": 16, "max_calls": 16, "max_tools": 14,
+    "max_parallel": 1, "max_invalid": 2,
+    "max_context_chars": 48000, "max_output_tokens": 4096,
+    "max_token_units": 240000, "deadline_seconds": 300,
+    "call_timeout_seconds": 90
+  },
+  "interpretation": "Single-specialist pilot, not the complete production board. Clinical labels require blinded clinician review. Automatic keyword coverage is a weak proxy, not clinical accuracy."
+}
